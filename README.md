@@ -1,4 +1,1 @@
-# cryptobar npm module created
-
-
 
