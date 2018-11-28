@@ -5,11 +5,19 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.mainNav {
+  background-color: #100b26 !important;
+  display: flex;
+  margin-left: 50vh;
+  margin-right: 60vh;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  border-radius: 5px;
 }
