@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "cryptocompare": "^0.7.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
