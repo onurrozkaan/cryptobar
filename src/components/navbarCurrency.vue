@@ -5,8 +5,7 @@ export default {
     return {
       coinName: String,
       moneyType: String,
-      price: null,
-      priceDiff: null,
+      lastTradeFrom: null,
       differentSign: null,
       coinSymbol: null
     };
@@ -14,22 +13,32 @@ export default {
   mounted() {
     const vm = this;
     const cc = require("cryptocompare");
+    var holder = null;
     function refreshFunction() {
-      cc.price(vm.coinName, vm.moneyType).then(result => {
-        var x = "x";
-        var converting = 0;
-        x = Object.values(result);
-        converting = parseFloat(x);
-        vm.price = converting.toFixed(2);
-        switch (vm.moneyType) {
-          case "TRY":
-            vm.coinSymbol = "₺";
-            break;
-          case "USD":
-            vm.coinSymbol = "$";
-        }
-      });
-      setTimeout(refreshFunction, 1 * 1000);
+      cc.priceFull(vm.coinName, vm.moneyType)
+        .then(result => {
+          vm.posCondition = true;
+          var converterFirst = [];
+          converterFirst = Object.values(result);
+
+          var converterSecond = [];
+          converterSecond = Object.values(converterFirst[0]);
+
+          var converterLast = [];
+          converterLast = Object.values(converterSecond[0]);
+          vm.lastTradeFrom = converterLast[20];
+
+          switch (vm.moneyType) {
+            case "TRY":
+              vm.coinSymbol = "₺";
+              break;
+            case "USD":
+              vm.coinSymbol = "$";
+          }
+        })
+        .catch(console.error);
+
+      setTimeout(refreshFunction, 2.5 * 1000);
     }
     refreshFunction();
   },
@@ -41,8 +50,7 @@ export default {
 </script>
 <template>
   <div class="stock-values" style="color: #2e7d32;">
-    <span>{{coinName}}/{{moneyType}}</span>
-    {{coinSymbol}}
-    <span>{{price}}</span>
+    <span style="color:#eee;">{{coinName}}/{{moneyType}}</span>
+    <span style="color:#c41e3a;">{{lastTradeFrom}}</span>
   </div>
 </template>
