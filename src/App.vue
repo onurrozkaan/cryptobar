@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" style="background-color:#100b26!important;">
     <div class="col-12 col-md-6">
       <div class="stock-news-area">
         <div id="stockNewsTicker" class="ticker">
