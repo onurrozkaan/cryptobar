@@ -60,7 +60,7 @@ export default {
     class="stock-index"
   >
     <h4>
-      <span style="color:#f2f0e6; font-size:15px; margin-right:-5px;">{{coinSymbol}}</span>
+      <span class="specialX">{{coinSymbol}}</span>
       {{price}}
     </h4>
   </div>

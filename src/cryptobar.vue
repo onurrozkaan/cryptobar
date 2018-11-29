@@ -5,15 +5,17 @@ import differentOfCurrency from "./components/differentOfCurrency.vue";
 export default {
   data: function() {
     return {
-
+      coinName1: String,
+      coinName2: String,
+      coinName3: String
     };
   },
-  mounted() {
-
-  },
+  mounted() {},
   name: "cryptobar",
   props: {
-    //
+    coinName1: String,
+    coinName2: String,
+    coinName3: String
   },
   methods: {},
   components: {
