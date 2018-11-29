@@ -475,12 +475,12 @@ img {
 }
 
 .single-stock-report .stock-index.plus-index h4 {
-  color: #30ca00;
+  color: #008d58;
 }
 
 .single-stock-report .stock-index.plus-index h4:before {
   content: "\e682";
-  color: #30ca00;
+  color: #008d58;
 }
 
 /* :: 4.2.0 Middle Header Area CSS */

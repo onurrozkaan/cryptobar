@@ -38,7 +38,7 @@ export default {
         })
         .catch(console.error);
 
-      setTimeout(refreshFunction, 2.5 * 1000);
+      setTimeout(refreshFunction, 5 * 1000);
     }
     refreshFunction();
   },

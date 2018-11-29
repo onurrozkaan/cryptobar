@@ -43,7 +43,7 @@ export default {
 
         holder = vm.price;
       });
-      setTimeout(refreshFunction, 2.5 * 1000);
+      setTimeout(refreshFunction, 5 * 1000);
     }
     refreshFunction();
   },
@@ -59,6 +59,9 @@ export default {
     v-bind:class="{ active: isActive, 'minus-index': negCondition, 'plus-index': posCondition }"
     class="stock-index"
   >
-    <h4>{{price}}</h4>
+    <h4>
+      <span style="color:#f2f0e6; font-size:15px; margin-right:-5px;">{{coinSymbol}}</span>
+      {{price}}
+    </h4>
   </div>
 </template>
