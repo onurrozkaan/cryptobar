@@ -10,6 +10,9 @@ notifications:
 # specify language
 language: node_js
 
+script:
+  - npm run test:single
+
 # configure which branches to run
 branches:
   # whitelist
