@@ -4,15 +4,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "int-test": "mocha --require babel-core/register --recursive test",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "cryptocompare": "^0.7.0",
-    "mocha": "^5.2.0",
     "nvm": "0.0.4",
     "vue": "^2.5.17"
   },
