@@ -1,6 +1,7 @@
 {
   "name": "vue-cryptobar",
   "version": "0.1.0",
+  "license": "MIT",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,6 +11,10 @@
   "dependencies": {
     "cryptocompare": "^0.7.0",
     "vue": "^2.5.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/onurrozkaan/vue-cryptobar.git"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
