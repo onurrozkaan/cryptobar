@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "cryptocompare": "^0.7.0",
+    "nvm": "0.0.4",
     "vue": "^2.5.17"
   },
   "repository": {
