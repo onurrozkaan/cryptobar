@@ -11,7 +11,7 @@ notifications:
 language: node_js
 
 script:
-  - npm run test:single
+  - npm run test
 
 # configure which branches to run
 branches:
