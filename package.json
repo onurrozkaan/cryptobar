@@ -1,6 +1,6 @@
 {
   "name": "vue-cryptobar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -27,6 +27,14 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "vue-template-compiler": "^2.5.17"
   },
+  "keywords": [
+    "cryptobar",
+    "cryptocurrency",
+    "bitcoin",
+    "ethereum",
+    "api",
+    "price"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {
