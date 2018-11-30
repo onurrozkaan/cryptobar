@@ -4,19 +4,11 @@ import differentOfCurrency from "./components/differentOfCurrency.vue";
 
 export default {
   data: function() {
-    return {
-      coinName1: String,
-      coinName2: String,
-      coinName3: String
-    };
+    return {};
   },
   mounted() {},
   name: "cryptobar",
-  props: {
-    coinName1: String,
-    coinName2: String,
-    coinName3: String
-  },
+  props: {},
   methods: {},
   components: {
     navbarCurrency,

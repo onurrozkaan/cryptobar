@@ -13,37 +13,37 @@ export default {
   mounted() {
     const vm = this;
     const cc = require("cryptocompare");
-    var holder = null;
+
     function refreshFunction() {
-      cc.priceFull(vm.coinName, vm.moneyType)
-        .then(result => {
-          vm.posCondition = true;
-          var converterFirst = [];
-          converterFirst = Object.values(result);
+      cc.priceFull(vm.coinName, vm.moneyType).then(result => {
+        vm.posCondition = true;
+        var converterFirst = [];
+        converterFirst = Object.values(result);
 
-          var converterSecond = [];
-          converterSecond = Object.values(converterFirst[0]);
+        var converterSecond = [];
+        converterSecond = Object.values(converterFirst[0]);
 
-          var converterLast = [];
-          converterLast = Object.values(converterSecond[0]);
-          vm.lastTradeFrom = converterLast[20];
+        var converterLast = [];
+        converterLast = Object.values(converterSecond[0]);
+        vm.lastTradeFrom = converterLast[20];
 
-          switch (vm.moneyType) {
-            case "TRY":
-              vm.coinSymbol = "₺";
-              break;
-            case "USD":
-              vm.coinSymbol = "$";
-          }
-        })
-        .catch(console.error);
+        switch (vm.moneyType) {
+          case "TRY":
+            vm.coinSymbol = "₺";
+            break;
+          case "USD":
+            vm.coinSymbol = "$";
+        }
+      });
 
       setTimeout(refreshFunction, 5 * 1000);
     }
     refreshFunction();
   },
   props: {
+    // eslint-disable-next-line
     coinName: String,
+    // eslint-disable-next-line
     moneyType: String
   }
 };
