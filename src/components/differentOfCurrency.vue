@@ -1,4 +1,9 @@
 <script>
+document.write(
+  unescape(
+    "%3Cscript src='https://code.jquery.com/jquery-2.2.4.min.js' type='text/javascript'%3E%3C/script%3E"
+  )
+);
 export default {
   name: "differentOfCurrency",
   data() {
@@ -65,3 +70,60 @@ export default {
     </h4>
   </div>
 </template>
+
+<style>
+.single-stock-report .stock-index.minus-index h4,
+.single-stock-report .stock-index.plus-index h4 {
+  color: #c41e3a;
+  position: relative;
+  z-index: 1;
+  padding-left: 30px;
+}
+
+.single-stock-report .stock-index.minus-index h4:before,
+.single-stock-report .stock-index.plus-index h4:before {
+  content: "\e688";
+  color: #c41e3a;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -10px;
+  font-family: "Pe-icon-7-stroke";
+  font-size: 44px;
+  line-height: 32px;
+}
+.single-stock-report .stock-index.minus-index h4,
+.single-stock-report .stock-index.plus-index h4 {
+  color: #c41e3a;
+  position: relative;
+  z-index: 1;
+  padding-left: 30px;
+}
+
+.single-stock-report .stock-index.minus-index h4:before,
+.single-stock-report .stock-index.plus-index h4:before {
+  content: "\e688";
+  color: #c41e3a;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -10px;
+  font-family: "Pe-icon-7-stroke";
+  font-size: 44px;
+  line-height: 32px;
+}
+
+.single-stock-report .stock-index.plus-index h4 {
+  color: #008d58;
+}
+
+.single-stock-report .stock-index.plus-index h4:before {
+  content: "\e682";
+  color: #008d58;
+}
+.specialX {
+  color: #f2f0e6;
+  font-size: 15px;
+  margin-right: -5px;
+}
+</style>

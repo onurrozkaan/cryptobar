@@ -1,4 +1,9 @@
 <script>
+document.write(
+  unescape(
+    "%3Cscript src='https://code.jquery.com/jquery-2.2.4.min.js' type='text/javascript'%3E%3C/script%3E"
+  )
+);
 export default {
   name: "navbarCurrency",
   data() {
@@ -54,3 +59,17 @@ export default {
     <span style="color:#c41e3a;">{{lastTradeFrom}}</span>
   </div>
 </template>
+
+<style>
+.single-stock-report .stock-values span {
+  padding-right: 20px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.single-stock-report .stock-values span:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+</style>
