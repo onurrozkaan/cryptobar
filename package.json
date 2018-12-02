@@ -1,12 +1,14 @@
 {
   "name": "vue-cryptobar",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build ",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test": "jest"
   },
   "dependencies": {
     "ajv": "^6.6.1",
@@ -14,6 +16,10 @@
     "cryptocompare": "^0.7.0",
     "vue": "^2.5.17"
   },
+  "browser": {
+    "./sfc": "src/components/cryptobar.vue"
+  },
+  "main": "dist/index",
   "repository": {
     "type": "git",
     "url": "git://github.com/onurrozkaan/vue-cryptobar.git"
@@ -28,6 +34,7 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "vue-template-compiler": "^2.5.17"
   },
+  "author": "Onur OZKAN",
   "keywords": [
     "cryptobar",
     "cryptocurrency",
