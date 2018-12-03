@@ -1,5 +1,5 @@
 <script>
-import cryptobar from "./components/cryptobar.vue";
+import cryptobar from "./cryptobar.vue";
 
 export default {
   name: "app",
