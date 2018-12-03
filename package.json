@@ -1,6 +1,6 @@
 {
   "name": "vue-cryptobar",
-  "version": "1.0.0",
+  "version": "0.5",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -14,30 +14,33 @@
   "dependencies": {
     "ajv": "^6.6.1",
     "ajv-keywords": "^3.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "cryptocompare": "^0.7.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "vue": "^2.5.17"
   },
-  "main": "./dist/cryptobar.common.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/onurrozkaan/vue-cryptobar.git"
   },
-  "files": [
-    "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
-  ],
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
     "@vue/cli-plugin-eslint": "^3.1.5",
     "@vue/cli-service": "^3.1.4",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
-    "node": "^11.2.0",
     "eslint-plugin-vue": "^5.0.0-0",
-    "vue-template-compiler": "^2.5.17"
+    "node": "^11.2.0",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-cli": "^3.1.2"
+  },
+  "unpkg": "dist/vue-cryptobar.js",
+  "main": "./dist/index.js",
+  "browser": {
+    "./sfc": "dist/vue-cryptobar.vue"
+  },
+  "peerDependencies": {
+    "vue": "2.x"
   },
   "author": "Onur OZKAN",
   "keywords": [
