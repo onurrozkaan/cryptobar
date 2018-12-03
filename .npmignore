@@ -1,8 +1,0 @@
-#
-webpack.config.js
-*~
-src
-public
-.babel.config.js
-*.png
-yarn*

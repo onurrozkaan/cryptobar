@@ -8,8 +8,7 @@ export default {
   name: "navbarCurrency",
   data() {
     return {
-      coinName: String,
-      moneyType: String,
+      
       lastTradeFrom: null,
       differentSign: null,
       coinSymbol: null

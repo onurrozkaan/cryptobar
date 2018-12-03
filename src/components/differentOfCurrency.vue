@@ -8,8 +8,7 @@ export default {
   name: "differentOfCurrency",
   data() {
     return {
-      coinName: String,
-      moneyType: String,
+    
       price: 0,
       coinSymbol: null,
       posCondition: null,

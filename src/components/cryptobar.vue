@@ -24,8 +24,8 @@ export default {
   mounted() {},
   name: "cryptobar",
   props: {
-    coinNameConfig: [],
-    coinTypeConfig: []
+    coinNameConfig: Array,
+    coinTypeConfig: Array
   },
   methods: {},
   components: {
