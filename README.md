@@ -1,5 +1,4 @@
-<h1 align="center"> vue-cryptobar </h1>
-<br>
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/39852038/49454475-47989e80-f7f6-11e8-8f66-6305ffec0dcb.gif"/>
 </p>
@@ -12,7 +11,8 @@
   <img src="https://img.shields.io/github/issues/onurrozkaan/vue-cryptobar.svg"/>
   <img src="https://img.shields.io/github/license/onurrozkaan/vue-cryptobar.svg"/>
 </p>
-
+<h1 align="center"> vue-cryptobar </h1>
+<br>
 ## Installation
 
 ##### (vue-cryptobar requires Node and Vue.js to run.)
