@@ -28,9 +28,8 @@ var config = {
         test: /\.js$/,
         loader: "babel-loader",
         include: [
-          resolve("src"),
-          resolve("public/js"),
-          resolve("node_modules/webpack-dev-server/client")
+          resolve("./src"),
+          resolve("./node_modules/webpack-dev-server/client")
         ]
       },
       {

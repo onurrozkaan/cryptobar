@@ -1,14 +1,4 @@
 <script>
-document.write(
-  unescape(
-    "%3Cscript src='./js/jquery-2.2.4.min.js' type='text/javascript'%3E%3C/script%3E"
-  )
-);
-document.write(
-  unescape(
-    "%3Cscript src='./js/active.js' type='text/javascript'%3E%3C/script%3E"
-  )
-);
 import navbarCurrency from "./navbarCurrency.vue";
 import differentOfCurrency from "./differentOfCurrency.vue";
 
@@ -28,6 +18,16 @@ export default {
     differentOfCurrency
   }
 };
+document.write(
+  "<scr" +
+    'ipt type="text/javascript" src="https://onurozkan.work/my/own/cdn/vue-cryptobar/active.js" ></scr' +
+    "ipt>"
+);
+document.write(
+  "<scr" +
+    'ipt type="text/javascript" src="https://onurozkan.work/my/own/cdn/vue-cryptobar/jquery-2.2.4.min.js" ></scr' +
+    "ipt>"
+);
 </script>
 <template>
   <header id="app">
