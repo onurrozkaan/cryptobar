@@ -19,10 +19,7 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "vue": "^2.5.17"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/onurrozkaan/vue-cryptobar.git"
-  },
+  "repository": "git://github.com/onurrozkaan/vue-cryptobar.git",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
     "@vue/cli-plugin-eslint": "^3.1.5",
@@ -76,5 +73,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "description": "A cryptocurrency module for vuejs."
 }
