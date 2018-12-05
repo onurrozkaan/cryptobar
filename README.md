@@ -36,5 +36,8 @@ And last thing to do is configuration of vue-cryptobar. Like:
 ```sh
 <cryptobar :coin-name-config="['BTC','ETH','XRP']" :coin-type-config="['USD', 'TRY']"/>
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> db91ca1bf77977330045465030c6869314827228
 Its possible to put any 3 crypto coins and any 2 different coin type to that options. With next patches it will be much more adjustable and flexible. For 0.0.7beta version, that options are necessary to work properly.
