@@ -13,11 +13,11 @@
 <h1 align="center"> vue-cryptobar </h1>
 <br>
 
+#### Before the installation vue-cryptobar requires Node and Vue.js to run.
+
 ## Installation
 
-##### (vue-cryptobar requires Node and Vue.js to run.)
-
-Install the vue-cryptobar on your vue project:
+##### Install the vue-cryptobar on your vue project:
 
 ```sh
 $ npm install --save vue-cryptobar
@@ -25,16 +25,21 @@ $ npm install --save vue-cryptobar
 
 ## To using vue-cryptobar
 
-#### Add 'cryptobar' to inside of your 'components' section, after then:
+##### Add 'cryptobar' to inside of your 'components' section, after then:
 
 ```sh
-$ import cryptobar from "vue-cryptobar"
+import cryptobar from "vue-cryptobar"
 ```
 
-And last thing to do is configuration of vue-cryptobar. Like:
+##### And last thing to do is:
+
+```sh
+<cryptobar/>
+```
+##### Default coins are Bitcoin, Ethereum, Ripple and default currencies are USD and TRY. To put specific values you have to go on options like: 
 
 ```sh
 <cryptobar :coin-name-config="['BTC','ETH','XRP']" :coin-type-config="['USD', 'TRY']"/>
 ```
 
-Its possible to put any 3 crypto coins and any 2 different coin type to that options. With next patches it will be much more adjustable and flexible. For 0.0.7beta version, that options are necessary to work properly.
+##### Its possible to put any 3 cryptocoins and any 2 currencies to that options. With next patches it will be much more adjustable and flexible. For 0.0.8beta version, that options are necessary to make it work.
