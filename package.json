@@ -1,8 +1,9 @@
 {
   "name": "vue-cryptobar",
-  "version": "0.0.7beta",
+  "version": "0.0.8beta",
   "license": "MIT",
   "private": false,
+  "description": "A cryptocurrency module which looks modern and clear",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
@@ -73,6 +74,5 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "description": "A cryptocurrency module for vuejs."
+  ]
 }
