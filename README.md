@@ -42,4 +42,4 @@ import cryptobar from "vue-cryptobar"
 <cryptobar :coin-name-config="['BTC','ETH','XRP']" :coin-type-config="['USD', 'TRY']"/>
 ```
 
-##### Its possible to put any 3 cryptocoins and any 2 currencies to that options. With next patches it will be much more adjustable and flexible. For 0.0.8beta version, that options are necessary to work properly.
+##### Its possible to put any 3 cryptocoins and any 2 currencies to that options. With next patches it will be much more adjustable and flexible. For 0.0.8beta version, that options are necessary to make it work.
