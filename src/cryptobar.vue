@@ -1,6 +1,6 @@
 <script>
-import navbarCurrency from "./navbarCurrency.vue";
-import differentOfCurrency from "./differentOfCurrency.vue";
+import tradeMarket from "./tradeMarket.vue";
+import coinPrice from "./coinPrice.vue";
 
 export default {
   data: function() {
@@ -9,13 +9,21 @@ export default {
   mounted() {},
   name: "cryptobar",
   props: {
-    coinNameConfig: Array,
-    coinTypeConfig: Array
+    coinNameConfig: {
+      /* eslint-disable */
+      default: ["BTC", "ETH", "XRP"],
+      type: Array
+    },
+    coinTypeConfig: {
+      /* eslint-disable */
+      default: ["USD", "TRY"],
+      type: Array
+    }
   },
   methods: {},
   components: {
-    navbarCurrency,
-    differentOfCurrency
+    tradeMarket,
+    coinPrice
   }
 };
 document.write(
@@ -47,52 +55,34 @@ document.write(
                 <ul>
                   <li>
                     <div class="single-stock-report">
-                      <navbarCurrency :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[0]"/>
-                      <differentOfCurrency
-                        :coinName="coinNameConfig[0]"
-                        :moneyType="coinTypeConfig[0]"
-                      />
+                      <tradeMarket :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[0]"/>
+                      <coinPrice :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[0]"/>
                     </div>
 
                     <div class="single-stock-report">
-                      <navbarCurrency :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[0]"/>
-                      <differentOfCurrency
-                        :coinName="coinNameConfig[1]"
-                        :moneyType="coinTypeConfig[0]"
-                      />
+                      <tradeMarket :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[0]"/>
+                      <coinPrice :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[0]"/>
                     </div>
 
                     <div class="single-stock-report">
-                      <navbarCurrency :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[0]"/>
-                      <differentOfCurrency
-                        :coinName="coinNameConfig[2]"
-                        :moneyType="coinTypeConfig[0]"
-                      />
+                      <tradeMarket :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[0]"/>
+                      <coinPrice :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[0]"/>
                     </div>
                   </li>
                   <li>
                     <div class="single-stock-report">
-                      <navbarCurrency :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[1]"/>
-                      <differentOfCurrency
-                        :coinName="coinNameConfig[0]"
-                        :moneyType="coinTypeConfig[1]"
-                      />
+                      <tradeMarket :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[1]"/>
+                      <coinPrice :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[1]"/>
                     </div>
 
                     <div class="single-stock-report">
-                      <navbarCurrency :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[1]"/>
-                      <differentOfCurrency
-                        :coinName="coinNameConfig[1]"
-                        :moneyType="coinTypeConfig[1]"
-                      />
+                      <tradeMarket :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[1]"/>
+                      <coinPrice :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[1]"/>
                     </div>
 
                     <div class="single-stock-report">
-                      <navbarCurrency :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[1]"/>
-                      <differentOfCurrency
-                        :coinName="coinNameConfig[2]"
-                        :moneyType="coinTypeConfig[1]"
-                      />
+                      <tradeMarket :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[1]"/>
+                      <coinPrice :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[1]"/>
                     </div>
                   </li>
                 </ul>

@@ -5,7 +5,7 @@ document.write(
   )
 );
 export default {
-  name: "navbarCurrency",
+  name: "tradeMarket",
   data() {
     return {
       

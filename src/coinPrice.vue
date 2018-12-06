@@ -5,10 +5,9 @@ document.write(
   )
 );
 export default {
-  name: "differentOfCurrency",
+  name: "coinPrice",
   data() {
     return {
-    
       price: 0,
       coinSymbol: null,
       posCondition: null,

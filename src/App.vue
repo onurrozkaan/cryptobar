@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div>
-    <cryptobar :coin-name-config="['BTC','ETH','XRP']" :coin-type-config="['USD', 'TRY']"/>
+    <cryptobar/>
   </div>
 </template>
 
