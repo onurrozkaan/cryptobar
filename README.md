@@ -13,7 +13,7 @@
 <h1 align="center"> vue-cryptobar </h1>
 <br>
 
-# Before the installation vue-cryptobar requires Node and Vue.js to run.
+#### Before the installation vue-cryptobar requires Node and Vue.js to run.
 
 ## Installation
 
