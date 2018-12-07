@@ -38,10 +38,34 @@ import cryptobar from "vue-cryptobar"
 ```sh
 <cryptobar/>
 ```
-##### Default coins are Bitcoin, Ethereum, Ripple and default currencies are USD and TRY. To put specific values you have to go on options like: 
+
+# Configurations
+#### Values
+##### Default coins are Bitcoin, Ethereum, Ripple and default currencies are USD and TRY. To make cryptobar with specific values you have to go on options like: 
 
 ```sh
 <cryptobar :coin-name-config="['BTC','ETH','XRP']" :coin-type-config="['USD', 'TRY']"/>
 ```
+#### Styling
+#### You can also make cryptobar style as whatever you want. The default style of cryptobar is like as in the gif. In style options every color values you can put in, like hex, rgb code or directly color name. 
 
-##### Its possible to put any 3 cryptocoins and any 2 currencies to that options. With next patches it will be much more adjustable and flexible. For 0.0.8beta version, that options are necessary to make it work.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/39852038/49645349-9465ba80-fa2c-11e8-94ea-fa6cc96fda74.png"/>
+</p>
+
+#### With example:
+
+```sh
+<cryptobar
+      bar-color="rgb(192, 192, 192)"
+      positive-price-color="#253121"
+      negative-price-color="orange"
+      currency-symbol-color="#212121"
+      name-and-currency-color="rgb(255, 255, 255)"
+      trade-market-color="yellow"
+/>
+```
+
+About feedback or any kind of help mail me to onurrozkaan@gmail.com.
+##### With next patches vue-cryptobar will be much more adjustable and flexible.
+##### About feedback or any kind of help mail me to onurrozkaan@gmail.com.
