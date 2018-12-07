@@ -17,7 +17,7 @@
 
 # About vue-cryptobar
 
-##### Vue-cryptobar is a cryptocurrency tool for Vue developers which looks really modern and clear and also can be re-styled with configurations. It shows current prices with colors depending on the positive-negative values and also shows the market name which is did the last transition.
+##### Vue-cryptobar is a cryptocurrency tool for Vue developers which looks really modern and clear also can be re-styled with configurations. It shows current prices with colors depending on the positive-negative values and also shows the market name which did the last transition.
 
 #### Before the installation vue-cryptobar requires Node and Vue.js to run.
 
