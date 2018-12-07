@@ -64,12 +64,12 @@ import cryptobar from "vue-cryptobar"
 
 ```sh
 <cryptobar
-      bar-color="rgb(192, 192, 192)"
-      positive-price-color="#253121"
-      negative-price-color="orange"
-      currency-symbol-color="#212121"
-      name-and-currency-color="rgb(255, 255, 255)"
-      trade-market-color="yellow"
+     bar-color="rgb(192, 192, 192)"
+     positive-price-color="#253121"
+     negative-price-color="orange"
+     currency-symbol-color="#212121"
+     name-and-currency-color="rgb(255, 255, 255)"
+     trade-market-color="yellow"
   />
 ```
 
