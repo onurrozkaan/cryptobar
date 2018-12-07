@@ -49,7 +49,8 @@ import cryptobar from "vue-cryptobar"
 
 ```sh
 <cryptobar
-    :coin-name-config="['BTC','ETH','XRP']" :coin-type-config="['USD', 'TRY']"
+    :coin-name-config="['BTC','ETH','XRP']" 
+    :coin-type-config="['USD', 'TRY']"
   />
 ```
 #### Styling
