@@ -66,6 +66,5 @@ import cryptobar from "vue-cryptobar"
 />
 ```
 
-About feedback or any kind of help mail me to onurrozkaan@gmail.com.
 ##### With next patches vue-cryptobar will be much more adjustable and flexible.
 ##### About feedback or any kind of help mail me to onurrozkaan@gmail.com.
