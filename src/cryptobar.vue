@@ -1,6 +1,6 @@
 <script>
-import tradeMarket from "./tradeMarket.vue";
-import coinPrice from "./coinPrice.vue";
+import tradeMarket from "./configurations/tradeMarket.vue";
+import coinPrice from "./configurations/coinPrice.vue";
 
 export default {
   data: function() {
@@ -18,6 +18,30 @@ export default {
       /* eslint-disable */
       default: ["USD", "TRY"],
       type: Array
+    },
+    barColor: {
+      default: "#141b2b",
+      type: String
+    },
+    negativePriceColor: {
+      default: "#c41e3a",
+      type: String
+    },
+    positivePriceColor: {
+      default: "#008d58",
+      type: String
+    },
+    nameAndCurrencyColor: {
+      default: "#eee",
+      type: String
+    },
+    tradeMarketColor: {
+      default: "#c41e3a",
+      type: String
+    },
+    currencySymbolColor: {
+      default: "#f2f0e6",
+      type: String
     }
   },
   methods: {},
@@ -51,38 +75,104 @@ document.write(
           <!-- Stock News Area -->
           <div class="col-12 col-md-6">
             <div>
-              <div id="stockNewsTicker" class="ticker">
+              <div id="stockNewsTicker" :style="'background-color:'+barColor+';'" class="ticker">
                 <ul>
                   <li>
                     <div class="single-stock-report">
-                      <tradeMarket :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[0]"/>
-                      <coinPrice :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[0]"/>
+                      <tradeMarket
+                        :color1="nameAndCurrencyColor"
+                        :color2="tradeMarketColor"
+                        :coinName="coinNameConfig[0]"
+                        :moneyType="coinTypeConfig[0]"
+                      />
+                      <coinPrice
+                        :negative="negativePriceColor"
+                        :positive="positivePriceColor"
+                        :symbolColor="currencySymbolColor"
+                        :coinName="coinNameConfig[0]"
+                        :moneyType="coinTypeConfig[0]"
+                      />
                     </div>
 
                     <div class="single-stock-report">
-                      <tradeMarket :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[0]"/>
-                      <coinPrice :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[0]"/>
+                      <tradeMarket
+                        :color1="nameAndCurrencyColor"
+                        :color2="tradeMarketColor"
+                        :coinName="coinNameConfig[1]"
+                        :moneyType="coinTypeConfig[0]"
+                      />
+                      <coinPrice
+                        :negative="negativePriceColor"
+                        :positive="positivePriceColor"
+                        :symbolColor="currencySymbolColor"
+                        :coinName="coinNameConfig[1]"
+                        :moneyType="coinTypeConfig[0]"
+                      />
                     </div>
 
                     <div class="single-stock-report">
-                      <tradeMarket :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[0]"/>
-                      <coinPrice :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[0]"/>
+                      <tradeMarket
+                        :color1="nameAndCurrencyColor"
+                        :color2="tradeMarketColor"
+                        :coinName="coinNameConfig[2]"
+                        :moneyType="coinTypeConfig[0]"
+                      />
+                      <coinPrice
+                        :negative="negativePriceColor"
+                        :positive="positivePriceColor"
+                        :symbolColor="currencySymbolColor"
+                        :coinName="coinNameConfig[2]"
+                        :moneyType="coinTypeConfig[0]"
+                      />
                     </div>
                   </li>
                   <li>
                     <div class="single-stock-report">
-                      <tradeMarket :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[1]"/>
-                      <coinPrice :coinName="coinNameConfig[0]" :moneyType="coinTypeConfig[1]"/>
+                      <tradeMarket
+                        :color1="nameAndCurrencyColor"
+                        :color2="tradeMarketColor"
+                        :coinName="coinNameConfig[0]"
+                        :moneyType="coinTypeConfig[1]"
+                      />
+                      <coinPrice
+                        :negative="negativePriceColor"
+                        :positive="positivePriceColor"
+                        :symbolColor="currencySymbolColor"
+                        :coinName="coinNameConfig[0]"
+                        :moneyType="coinTypeConfig[1]"
+                      />
                     </div>
 
                     <div class="single-stock-report">
-                      <tradeMarket :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[1]"/>
-                      <coinPrice :coinName="coinNameConfig[1]" :moneyType="coinTypeConfig[1]"/>
+                      <tradeMarket
+                        :color1="nameAndCurrencyColor"
+                        :color2="tradeMarketColor"
+                        :coinName="coinNameConfig[1]"
+                        :moneyType="coinTypeConfig[1]"
+                      />
+                      <coinPrice
+                        :negative="negativePriceColor"
+                        :positive="positivePriceColor"
+                        :symbolColor="currencySymbolColor"
+                        :coinName="coinNameConfig[1]"
+                        :moneyType="coinTypeConfig[1]"
+                      />
                     </div>
 
                     <div class="single-stock-report">
-                      <tradeMarket :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[1]"/>
-                      <coinPrice :coinName="coinNameConfig[2]" :moneyType="coinTypeConfig[1]"/>
+                      <tradeMarket
+                        :color1="nameAndCurrencyColor"
+                        :color2="tradeMarketColor"
+                        :coinName="coinNameConfig[2]"
+                        :moneyType="coinTypeConfig[1]"
+                      />
+                      <coinPrice
+                        :negative="negativePriceColor"
+                        :positive="positivePriceColor"
+                        :symbolColor="currencySymbolColor"
+                        :coinName="coinNameConfig[2]"
+                        :moneyType="coinTypeConfig[1]"
+                      />
                     </div>
                   </li>
                 </ul>
@@ -136,7 +226,6 @@ document.write(
   position: relative;
   overflow: hidden;
   opacity: 0.86;
-  background-color: #141b2b;
   border-radius: 10px;
 }
 
@@ -170,7 +259,6 @@ document.write(
 }
 
 .single-stock-report .stock-index h4 {
-  color: #fff;
   margin-bottom: 0;
 }
 
@@ -188,7 +276,6 @@ document.write(
 
 .single-stock-report .stock-index.minus-index h4,
 .single-stock-report .stock-index.plus-index h4 {
-  color: #c41e3a;
   position: relative;
   z-index: 1;
   padding-left: 30px;
@@ -197,7 +284,6 @@ document.write(
 .single-stock-report .stock-index.minus-index h4:before,
 .single-stock-report .stock-index.plus-index h4:before {
   content: "\e688";
-  color: #c41e3a;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -208,12 +294,10 @@ document.write(
 }
 
 .single-stock-report .stock-index.plus-index h4 {
-  color: #008d58;
 }
 
 .single-stock-report .stock-index.plus-index h4:before {
   content: "\e682";
-  color: #008d58;
 }
 
 .mainNav {
