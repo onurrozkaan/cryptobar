@@ -51,7 +51,7 @@ import cryptobar from "vue-cryptobar"
 <cryptobar :coin-name-config="['BTC','ETH','XRP']" :coin-type-config="['USD', 'TRY']"/>
 ```
 #### Styling
-#### You can also make cryptobar style as whatever you want. The default style of cryptobar is like as in the gif. In style options every color values you can put in, like hex, rgb code or directly color name. 
+#### The cryptobar can be re-styled to your preferred colors. Default style of the cryptobar is as in the gif above.  For re-styling you can put in any color value such as, hex, rgb or direct color name.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/39852038/49645349-9465ba80-fa2c-11e8-94ea-fa6cc96fda74.png"/>
