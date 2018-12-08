@@ -23,6 +23,10 @@ export default {
       default: "#141b2b",
       type: String
     },
+    barRadius: {
+      default: "3px",
+      type: String
+    },
     negativePriceColor: {
       default: "#c41e3a",
       type: String
@@ -75,7 +79,11 @@ document.write(
           <!-- Stock News Area -->
           <div class="col-12 col-md-6">
             <div>
-              <div id="stockNewsTicker" :style="'background-color:'+barColor+';'" class="ticker">
+              <div
+                id="stockNewsTicker"
+                :style="'background-color:'+barColor+';'+'border-radius:'+barRadius+';'"
+                class="ticker"
+              >
                 <ul>
                   <li>
                     <div class="single-stock-report">
@@ -226,7 +234,6 @@ document.write(
   position: relative;
   overflow: hidden;
   opacity: 0.86;
-  border-radius: 10px;
 }
 
 #stockNewsTicker.ticker ul {

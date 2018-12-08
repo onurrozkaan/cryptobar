@@ -45,15 +45,17 @@ export default {
   },
   props: {
     // eslint-disable-next-line
-    coinName: String,
+    coinName: {
+      type: String
+    },
     // eslint-disable-next-line
-    moneyType: String,
+    moneyType: {
+      type: String
+    },
     color1: {
-      default: "#eee",
       type: String
     },
     color2: {
-      default: "#c41e3a",
       type: String
     }
   }

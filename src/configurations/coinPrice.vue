@@ -85,18 +85,19 @@ export default {
     refreshFunction();
   },
   props: {
-    coinName: String,
-    moneyType: String,
+    coinName: {
+      type: String
+    },
+    moneyType: {
+      type: String
+    },
     negative: {
-      default: "#c41e3a",
       type: String
     },
     positive: {
-      default: "#008d58",
       type: String
     },
     symbolColor: {
-      default: "#f2f0e6",
       type: String
     }
   }
