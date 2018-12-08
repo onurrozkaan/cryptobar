@@ -57,7 +57,7 @@ import cryptobar from "vue-cryptobar"
 #### The cryptobar can be re-styled to your preferred colors. Default style of the cryptobar is as in the gif above.  For re-styling you can put in any color value such as, hex, rgb or direct color name.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/39852038/49645349-9465ba80-fa2c-11e8-94ea-fa6cc96fda74.png"/>
+<img src="https://user-images.githubusercontent.com/39852038/49684088-e87da700-fadf-11e8-9f42-41535f00db60.png"/>
 </p>
 
 #### With example:
