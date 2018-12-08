@@ -64,6 +64,7 @@ import cryptobar from "vue-cryptobar"
 
 ```sh
 <cryptobar
+     bar-radius="4px"
      bar-color="rgb(192, 192, 192)"
      positive-price-color="#253121"
      negative-price-color="orange"
