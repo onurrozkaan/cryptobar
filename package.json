@@ -3,7 +3,7 @@
   "version": "0.1.0beta",
   "license": "MIT",
   "private": false,
-  "description": "A cryptocurrency module which looks modern and clear",
+  "description": "A dynamic cryptocurrency module which looks modern and clear.",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
