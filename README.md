@@ -74,5 +74,5 @@ import cryptobar from "vue-cryptobar"
   />
 ```
 
-##### With next patches vue-cryptobar will be much more adjustable and flexible.
+##### With next patches vue-cryptobar will be much more adjustable, flexible and responsive.
 ##### About feedback or any kind of help mail me to onurrozkaan@gmail.com.
