@@ -1,7 +1,7 @@
 <h1 align="center"> vue-cryptobar </h1>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/39852038/49454475-47989e80-f7f6-11e8-8f66-6305ffec0dcb.gif"/>
+<img src="https://user-images.githubusercontent.com/39852038/49700589-b8262d80-fbf1-11e8-9724-e77e9a0cf685.gif"/>
 </p>
 
 <p align="center">
