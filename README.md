@@ -45,11 +45,11 @@ import cryptobar from "vue-cryptobar"
 
 # Configurations
 #### Values
-##### Default coins are Bitcoin, Ethereum, Ripple and default currencies are USD and TRY. To make cryptobar with specific values you have to go on options like: 
+##### Default coins are Bitcoin, Ethereum, Maker and default currencies are USD and TRY. To make cryptobar with specific values you have to go on options like: 
 
 ```sh
 <cryptobar
-    :coin-name-config="['BTC','ETH','XRP']" 
+    :coin-name-config="['BTC','ETH','MKR']" 
     :coin-type-config="['USD', 'TRY']"
   />
 ```
