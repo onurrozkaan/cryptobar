@@ -63,9 +63,9 @@ module.exports = [
 
   // Config 2: For Node-based development environments
   // merge(config, {
-  // 	entry: path.resolve(__dirname, './single-select.vue'),
+  // 	entry: path.resolve(__dirname, './cryptobar.vue'),
   // 	output: {
-  // 	    filename: 'vue-clock.min.js',
+  // 	    filename: 'vue-cryptobar.min.js',
   // 	    libraryTarget: 'umd',
   // 	}
   // })

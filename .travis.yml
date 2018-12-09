@@ -7,10 +7,8 @@ notifications:
     on_success: change
     on_failure: always
 
-# specify language
 language: node_js
 
-# configure which branches to run
 branches:
   # whitelist
   only:

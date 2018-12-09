@@ -17,6 +17,3 @@ export default {
     <cryptobar/>
   </div>
 </template>
-
-<style>
-</style>
