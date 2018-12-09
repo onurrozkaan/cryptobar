@@ -11,7 +11,7 @@ export default {
   props: {
     coinNameConfig: {
       /* eslint-disable */
-      default: ["BTC", "ETH", "XRP"],
+      default: ["BTC", "ETH", "MKR"],
       type: Array
     },
     coinTypeConfig: {
@@ -231,6 +231,7 @@ document.write(
 }
 #stockNewsTicker.ticker {
   width: 100%;
+  min-width: 550px;
   position: relative;
   overflow: hidden;
   opacity: 0.86;
@@ -244,8 +245,6 @@ document.write(
 #stockNewsTicker.ticker ul li {
   display: none;
   width: 100%;
-  text-align: center;
-  margin-left: 6.5px;
 }
 
 #stockNewsTicker.ticker ul li a {

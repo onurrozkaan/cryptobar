@@ -62,10 +62,12 @@ export default {
 };
 </script>
 <template>
-  <div class="stock-values" style="color: #2e7d32;">
-    <span :style="'color:'+color1+';'">{{coinName}}/{{moneyType}}</span>
-    <span :style="'color:'+color2+';'">{{lastTradeFrom}}</span>
-  </div>
+  <transition name="fade" mode="out-in">
+    <div class="stock-values" style="color: #2e7d32;">
+      <span :style="'color:'+color1+';'">{{coinName}}/{{moneyType}}</span>
+      <span :style="'color:'+color2+';'">{{lastTradeFrom}}</span>
+    </div>
+  </transition>
 </template>
 
 <style>
@@ -79,5 +81,13 @@ export default {
 
 .single-stock-report .stock-values span:last-child {
   color: rgba(255, 255, 255, 0.5);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0s;
+  transition-duration: 0.3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0.25;
 }
 </style>
