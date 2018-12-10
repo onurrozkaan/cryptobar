@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://travis-ci.com/onurrozkaan/vue-cryptobar.svg"/>
   <img src="https://badge.fury.io/js/vue-cryptobar.svg"/>
-  <img src="https://img.shields.io/badge/node%20version-8.4.0-blue.svg"/>
+  <img src="https://img.shields.io/badge/node%20version-11.2.0-brightgreen.svg"/>
   <img src="https://img.shields.io/github/stars/onurrozkaan/vue-cryptobar.svg"/>
   <img src="https://img.shields.io/github/issues/onurrozkaan/vue-cryptobar.svg"/>
   <img src="https://img.shields.io/github/license/onurrozkaan/vue-cryptobar.svg"/>
