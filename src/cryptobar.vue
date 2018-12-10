@@ -11,40 +11,40 @@ export default {
   props: {
     coinNameConfig: {
       /* eslint-disable */
-      default: ["BTC", "ETH", "MKR"],
-      type: Array
+      type: Array,
+      default: () => ["BTC", "ETH", "MKR"]
     },
     coinTypeConfig: {
       /* eslint-disable */
-      default: ["USD", "TRY"],
-      type: Array
+      type: Array,
+      default: () => ["USD", "TRY"]
     },
     barColor: {
-      default: "#141b2b",
+      default: () => "#141b2b",
       type: String
     },
     barRadius: {
-      default: "3px",
+      default: () => "3px",
       type: String
     },
     negativePriceColor: {
-      default: "#c41e3a",
+      default: () => "#c41e3a",
       type: String
     },
     positivePriceColor: {
-      default: "#008d58",
+      default: () => "#008d58",
       type: String
     },
     nameAndCurrencyColor: {
-      default: "#eee",
+      default: () => "#eee",
       type: String
     },
     tradeMarketColor: {
-      default: "#c41e3a",
+      default: () => "#c41e3a",
       type: String
     },
     currencySymbolColor: {
-      default: "#f2f0e6",
+      default: () => "#f2f0e6",
       type: String
     }
   },

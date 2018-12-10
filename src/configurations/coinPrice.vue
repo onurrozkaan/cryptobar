@@ -165,9 +165,10 @@ export default {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0s;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0.25;
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
