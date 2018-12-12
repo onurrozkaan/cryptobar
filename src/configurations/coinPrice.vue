@@ -152,9 +152,6 @@ export default {
   line-height: 32px;
 }
 
-.single-stock-report .stock-index.plus-index h4 {
-}
-
 .single-stock-report .stock-index.plus-index h4:before {
   content: "\e682";
 }
