@@ -1,88 +1,88 @@
 <script>
-var symbolApi = null;
-var nameApi = null;
-var symbolApi2 = null;
-var nameApi2 = null;
-var listMoney = [];
+var symbolApi = null
+var nameApi = null
+var symbolApi2 = null
+var nameApi2 = null
+var listMoney = []
 document.write(
   "<scr" +
     'ipt type="text/javascript" src="https://onurozkan.work/my/own/cdn/vue-cryptobar/jquery-2.2.4.min.js" ></scr' +
     "ipt>"
-);
+)
 export default {
-  name: "coinPrice",
+  name: 'coinPrice',
   data() {
     return {
       price: 0,
       coinSymbol: null,
       isPositive: true
-    };
+    }
   },
   mounted() {
-    var holder = null;
-    const vm = this;
-    const axios = require("axios");
-    const cc = require("cryptocompare");
-    listMoney.push(vm.moneyType);
+    var holder = null
+    const vm = this
+    const axios = require("axios")
+    const cc = require("cryptocompare")
+    listMoney.push(vm.moneyType)
 
     axios
       .get("https://currency-symbol-api.herokuapp.com/" + listMoney[0])
       .then(function(response) {
-        symbolApi = response.data.symbol;
-        nameApi = response.data.code;
+        symbolApi = response.data.symbol
+        nameApi = response.data.code
       })
       // eslint-disable-next-line
       .catch(function(error) {
-        // console.log(error);
-      });
+        // console.log(error)
+      })
     axios
       .get("https://currency-symbol-api.herokuapp.com/" + listMoney[5])
       .then(function(response) {
-        symbolApi2 = response.data.symbol;
-        nameApi2 = response.data.code;
+        symbolApi2 = response.data.symbol
+        nameApi2 = response.data.code
       })
       // eslint-disable-next-line
       .catch(function(error) {
-        //console.log(error);
-      });
+        //console.log(error)
+      })
 
     function refreshFunction() {
       cc.price(vm.coinName, vm.moneyType).then(result => {
-        var x = "x";
-        var converting = 0;
-        x = Object.values(result);
-        converting = parseFloat(x);
-        vm.price = converting.toFixed(2);
+        var x = "x"
+        var converting = 0
+        x = Object.values(result)
+        converting = parseFloat(x)
+        vm.price = converting.toFixed(2)
 
         if (null != holder && holder > vm.price) {
-          vm.isPositive = true;
+          vm.isPositive = true
         }
         if (null != holder && vm.price > holder) {
-          vm.isPositive = false;
+          vm.isPositive = false
         }
 
-        holder = vm.price;
+        holder = vm.price
 
         function refreshSymbol() {
           if (nameApi == vm.moneyType) {
             while (vm.coinSymbol != symbolApi) {
-              vm.coinSymbol = symbolApi;
+              vm.coinSymbol = symbolApi
             }
           }
 
           if (nameApi2 == vm.moneyType) {
             while (vm.coinSymbol != symbolApi2) {
-              vm.coinSymbol = symbolApi2;
+              vm.coinSymbol = symbolApi2
             }
           }
-          setTimeout(refreshSymbol, 1 * 500);
+          setTimeout(refreshSymbol, 1 * 500)
         }
-        refreshSymbol();
-      });
+        refreshSymbol()
+      })
 
-      setTimeout(refreshFunction, 5 * 1000);
+      setTimeout(refreshFunction, 5 * 1000)
     }
-    refreshFunction();
+    refreshFunction()
   },
   props: {
     coinName: {
@@ -101,14 +101,14 @@ export default {
       type: String
     }
   }
-};
+}
 </script>
 
 <template>
   <div class="stock-index" :style="[isPositive ? {'color' : positive} : {'color': negative}]">
     <transition name="fade" mode="out-in">
-      <h4 :key="price" style="text-align:center; margin-left:-12px;">
-        <span class="specialX" :style="'color:'+symbolColor+';'">{{coinSymbol}}</span>
+      <h4 :key="price" style="text-align:center margin-left:-12px">
+        <span class="specialX" :style="'color:'+symbolColor+''">{{coinSymbol}}</span>
         {{price}}
       </h4>
     </transition>

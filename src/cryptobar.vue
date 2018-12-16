@@ -1,13 +1,13 @@
 <script>
-import tradeMarket from "./configurations/tradeMarket.vue";
-import coinPrice from "./configurations/coinPrice.vue";
+import tradeMarket from './configurations/tradeMarket.vue';
+import coinPrice from './configurations/coinPrice.vue';
 
 export default {
   data: function() {
-    return {};
+    return {}
   },
   mounted() {},
-  name: "cryptobar",
+  name: 'cryptobar',
   props: {
     coinNameConfig: {
       /* eslint-disable */

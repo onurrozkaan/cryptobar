@@ -3,9 +3,9 @@ document.write(
   unescape(
     "%3Cscript src='https://code.jquery.com/jquery-2.2.4.min.js' type='text/javascript'%3E%3C/script%3E"
   )
-);
+)
 export default {
-  name: "tradeMarket",
+  name: 'tradeMarket',
   data() {
     return {
       lastTradeFrom: null,
@@ -14,34 +14,34 @@ export default {
     };
   },
   mounted() {
-    const vm = this;
-    const cc = require("cryptocompare");
+    const vm = this
+    const cc = require("cryptocompare")
 
     function refreshFunction() {
       cc.priceFull(vm.coinName, vm.moneyType).then(result => {
-        vm.posCondition = true;
-        var converterFirst = [];
-        converterFirst = Object.values(result);
+        vm.posCondition = true
+        var converterFirst = []
+        converterFirst = Object.values(result)
 
-        var converterSecond = [];
-        converterSecond = Object.values(converterFirst[0]);
+        var converterSecond = []
+        converterSecond = Object.values(converterFirst[0])
 
-        var converterLast = [];
-        converterLast = Object.values(converterSecond[0]);
-        vm.lastTradeFrom = converterLast[20];
+        var converterLast = []
+        converterLast = Object.values(converterSecond[0])
+        vm.lastTradeFrom = converterLast[20]
 
         switch (vm.moneyType) {
           case "TRY":
-            vm.coinSymbol = "₺";
-            break;
+            vm.coinSymbol = "₺"
+            break
           case "USD":
-            vm.coinSymbol = "$";
+            vm.coinSymbol = "$"
         }
-      });
+      })
 
-      setTimeout(refreshFunction, 5 * 1000);
+      setTimeout(refreshFunction, 5 * 1000)
     }
-    refreshFunction();
+    refreshFunction()
   },
   props: {
     // eslint-disable-next-line
@@ -61,6 +61,7 @@ export default {
   }
 };
 </script>
+
 <template>
   <transition name="fade" mode="out-in">
     <div class="stock-values" style="color: #2e7d32;">
