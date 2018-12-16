@@ -1,6 +1,6 @@
 {
   "name": "vue-cryptobar",
-  "version": "0.1.5beta",
+  "version": "0.1.6beta",
   "license": "MIT",
   "private": false,
   "description": "A dynamic cryptocurrency module which looks modern and clear.",
