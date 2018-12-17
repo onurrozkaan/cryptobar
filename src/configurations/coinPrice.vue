@@ -1,33 +1,35 @@
 <script>
+
 var symbolApi = null
 var nameApi = null
 var symbolApi2 = null
 var nameApi2 = null
 var listMoney = []
+
 document.write(
-  "<scr" +
+  '<scr' +
     'ipt type="text/javascript" src="https://onurozkan.work/my/own/cdn/vue-cryptobar/jquery-2.2.4.min.js" ></scr' +
-    "ipt>"
+    'ipt>'
 )
 export default {
   name: 'coinPrice',
-  data() {
+  data () {
     return {
       price: 0,
       coinSymbol: null,
       isPositive: true
     }
   },
-  mounted() {
+  mounted () {
     var holder = null
     const vm = this
-    const axios = require("axios")
-    const cc = require("cryptocompare")
+    const axios = require('axios')
+    const cc = require('cryptocompare')
     listMoney.push(vm.moneyType)
 
     axios
-      .get("https://currency-symbol-api.herokuapp.com/" + listMoney[0])
-      .then(function(response) {
+      .get('https://currency-symbol-api.herokuapp.com/' + listMoney[0])
+      .then(function (response) {
         symbolApi = response.data.symbol
         nameApi = response.data.code
       })
@@ -36,42 +38,42 @@ export default {
         // console.log(error)
       })
     axios
-      .get("https://currency-symbol-api.herokuapp.com/" + listMoney[5])
-      .then(function(response) {
+      .get('https://currency-symbol-api.herokuapp.com/' + listMoney[5])
+      .then(function (response) {
         symbolApi2 = response.data.symbol
         nameApi2 = response.data.code
       })
       // eslint-disable-next-line
-      .catch(function(error) {
-        //console.log(error)
+      .catch(function (error) {
+        // console.log(error)
       })
 
-    function refreshFunction() {
+    function refreshFunction () {
       cc.price(vm.coinName, vm.moneyType).then(result => {
-        var x = "x"
+        var x = 'x'
         var converting = 0
         x = Object.values(result)
         converting = parseFloat(x)
         vm.price = converting.toFixed(2)
 
-        if (null != holder && holder > vm.price) {
+        if (holder != null && holder > vm.price) {
           vm.isPositive = true
         }
-        if (null != holder && vm.price > holder) {
+        if (vm.price > holder && holder != null) {
           vm.isPositive = false
         }
 
         holder = vm.price
 
-        function refreshSymbol() {
-          if (nameApi == vm.moneyType) {
-            while (vm.coinSymbol != symbolApi) {
+        function refreshSymbol () {
+          if (nameApi === vm.moneyType) {
+            while (vm.coinSymbol !== symbolApi) {
               vm.coinSymbol = symbolApi
             }
           }
 
-          if (nameApi2 == vm.moneyType) {
-            while (vm.coinSymbol != symbolApi2) {
+          if (nameApi2 === vm.moneyType) {
+            while (vm.coinSymbol !== symbolApi2) {
               vm.coinSymbol = symbolApi2
             }
           }

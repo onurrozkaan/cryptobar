@@ -6,18 +6,18 @@ document.write(
 )
 export default {
   name: 'tradeMarket',
-  data() {
+  data () {
     return {
       lastTradeFrom: null,
       differentSign: null,
       coinSymbol: null
-    };
+    }
   },
-  mounted() {
+  mounted () {
     const vm = this
-    const cc = require("cryptocompare")
+    const cc = require('cryptocompare')
 
-    function refreshFunction() {
+    function refreshFunction () {
       cc.priceFull(vm.coinName, vm.moneyType).then(result => {
         vm.posCondition = true
         var converterFirst = []
@@ -31,11 +31,11 @@ export default {
         vm.lastTradeFrom = converterLast[20]
 
         switch (vm.moneyType) {
-          case "TRY":
-            vm.coinSymbol = "₺"
+          case 'TRY':
+            vm.coinSymbol = '₺'
             break
-          case "USD":
-            vm.coinSymbol = "$"
+          case 'USD':
+            vm.coinSymbol = '$'
         }
       })
 
@@ -44,11 +44,9 @@ export default {
     refreshFunction()
   },
   props: {
-    // eslint-disable-next-line
     coinName: {
       type: String
     },
-    // eslint-disable-next-line
     moneyType: {
       type: String
     },
@@ -59,7 +57,7 @@ export default {
       type: String
     }
   }
-};
+}
 </script>
 
 <template>

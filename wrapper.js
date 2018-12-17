@@ -1,21 +1,21 @@
-import cryptobar from "./src/cryptobar.vue";
+import cryptobar from './src/cryptobar.vue'
 
-export function install(Vue) {
-  if (install.installed) return;
-  install.installed = true;
-  Vue.component("vue-cryptobar", cryptobar);
+export function install (Vue) {
+  if (install.installed) return
+  install.installed = true
+  Vue.component('vue-cryptobar', cryptobar)
 }
 
 const plugin = {
   install
-};
+}
 
-let GlobalVue = null;
-if (typeof window !== "undefined") {
-  GlobalVue = window.Vue;
-} else if (typeof global !== "undefined") {
-  GlobalVue = global.Vue;
+let GlobalVue = null
+if (typeof window !== 'undefined') {
+  GlobalVue = window.Vue
+} else if (typeof global !== 'undefined') {
+  GlobalVue = global.Vue
 }
 if (GlobalVue) {
-  GlobalVue.use(plugin);
+  GlobalVue.use(plugin)
 }

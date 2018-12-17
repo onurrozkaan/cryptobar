@@ -1,50 +1,48 @@
 <script>
-import tradeMarket from './configurations/tradeMarket.vue';
-import coinPrice from './configurations/coinPrice.vue';
+import tradeMarket from './configurations/tradeMarket.vue'
+import coinPrice from './configurations/coinPrice.vue'
 
 export default {
-  data: function() {
+  data: function () {
     return {}
   },
-  mounted() {},
+  mounted () {},
   name: 'cryptobar',
   props: {
     coinNameConfig: {
-      /* eslint-disable */
       type: Array,
-      default: () => ["BTC", "ETH", "MKR"]
+      default: () => ['BTC', 'ETH', 'MKR']
     },
     coinTypeConfig: {
-      /* eslint-disable */
       type: Array,
-      default: () => ["USD", "TRY"]
+      default: () => ['USD', 'TRY']
     },
     barColor: {
-      default: () => "#141b2b",
+      default: () => '#141b2b',
       type: String
     },
     barRadius: {
-      default: () => "3px",
+      default: () => '3px',
       type: String
     },
     negativePriceColor: {
-      default: () => "#c41e3a",
+      default: () => '#c41e3a',
       type: String
     },
     positivePriceColor: {
-      default: () => "#008d58",
+      default: () => '#008d58',
       type: String
     },
     nameAndCurrencyColor: {
-      default: () => "#eee",
+      default: () => '#eee',
       type: String
     },
     tradeMarketColor: {
-      default: () => "#c41e3a",
+      default: () => '#c41e3a',
       type: String
     },
     currencySymbolColor: {
-      default: () => "#f2f0e6",
+      default: () => '#f2f0e6',
       type: String
     }
   },
@@ -53,17 +51,17 @@ export default {
     tradeMarket,
     coinPrice
   }
-};
+}
 document.write(
-  "<scr" +
+  '<scr' +
     'ipt type="text/javascript" src="https://onurozkan.work/my/own/cdn/vue-cryptobar/active.js" ></scr' +
-    "ipt>"
-);
+    'ipt>'
+)
 document.write(
-  "<scr" +
+  '<scr' +
     'ipt type="text/javascript" src="https://onurozkan.work/my/own/cdn/vue-cryptobar/jquery-2.2.4.min.js" ></scr' +
-    "ipt>"
-);
+    'ipt>'
+)
 </script>
 <template>
   <header id="app">
