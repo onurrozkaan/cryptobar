@@ -1,16 +1,16 @@
 {
   "name": "vue-cryptobar",
-  "version": "0.1.6beta",
-  "license": "MIT",
+  "version": "0.1.7beta",
   "private": false,
   "description": "A dynamic cryptocurrency module which looks modern and clear.",
+  "author": "Onur OZKAN",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name cryptobar ./src/components/cryptobar.vue",
     "e2e": "vue-cli-service e2e",
-    "e2e:open": "vue-cli-service e2e:open",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name cryptobar ./src/components/cryptobar.vue",
+    "e2e:open": "vue-cli-service e2e:open"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -19,39 +19,19 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "vue": "^2.5.17"
   },
-  "repository": "git://github.com/onurrozkaan/vue-cryptobar.git",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
-    "@vue/cli-plugin-eslint": "^3.1.5",
+    "@vue/cli-plugin-eslint": "^3.2.1",
     "@vue/cli-service": "^3.1.4",
+    "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
+    "eslint-plugin-html": "^5.0.0",
     "node": "^11.2.0",
     "vue-template-compiler": "^2.5.17",
     "webpack-cli": "^3.1.2"
   },
-  "unpkg": "dist/vue-cryptobar.js",
-  "main": "./dist/index.js",
-  "browser": {
-    "./sfc": "dist/vue-cryptobar.vue"
-  },
-  "peerDependencies": {
-    "vue": "2.x"
-  },
-  "author": "Onur OZKAN",
-  "keywords": [
-    "vue-cryptobar",
-    "vue-crypto",
-    "cryptobar",
-    "crypto",
-    "cryptocurrency",
-    "currency",
-    "bitcoin",
-    "ethereum",
-    "api",
-    "price"
-  ],
   "eslintConfig": {
     "root": true,
     "env": {
@@ -59,7 +39,8 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/standard"
     ],
     "rules": {},
     "parserOptions": {
@@ -75,5 +56,27 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "browser": {
+    "./sfc": "dist/vue-cryptobar.vue"
+  },
+  "keywords": [
+    "vue-cryptobar",
+    "vue-crypto",
+    "cryptobar",
+    "crypto",
+    "cryptocurrency",
+    "currency",
+    "bitcoin",
+    "ethereum",
+    "api",
+    "price"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "peerDependencies": {
+    "vue": "2.x"
+  },
+  "repository": "git://github.com/onurrozkaan/vue-cryptobar.git",
+  "unpkg": "dist/vue-cryptobar.js"
 }
