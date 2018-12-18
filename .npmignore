@@ -7,4 +7,5 @@ public
 jest.config.js
 coverage
 *.png
+*.gif
 yarn*
