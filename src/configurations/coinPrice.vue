@@ -108,12 +108,10 @@ export default {
 
 <template>
   <div class="stock-index" :style="[isPositive ? {'color' : positive} : {'color': negative}]">
-    <transition name="fade" mode="out-in">
       <h4 :key="price" style="text-align:center margin-left:-12px">
         <span class="specialX" :style="'color:'+symbolColor+''">{{coinSymbol}}</span>
         {{price}}
       </h4>
-    </transition>
   </div>
 </template>
 
@@ -160,14 +158,5 @@ export default {
 .specialX {
   font-size: 15px;
   margin-right: -5px;
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0s;
-  transition-duration: 0.4s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
 }
 </style>

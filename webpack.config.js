@@ -9,7 +9,7 @@ function resolve (dir) {
 }
 
 var config = {
-  mode: process.env.NODE_ENV,
+  mode: 'production',
   output: {
     path: path.resolve(__dirname + '/dist/')
   },
