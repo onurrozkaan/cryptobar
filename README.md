@@ -75,4 +75,4 @@ import cryptobar from "vue-cryptobar"
 ```
 
 ##### With next patches vue-cryptobar will be much more adjustable, flexible and responsive for different size screens.
-##### Feedback to onurrozkaan@gmail.com via mail to make this tool greater :+1:
+##### Feedback to contact@onurozkan.work via mail to make this tool greater :+1:
