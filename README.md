@@ -1,7 +1,5 @@
-<h1 align="center"> vue-cryptobar </h1>
-
 <p align="center">
-<img src="https://user-images.githubusercontent.com/39852038/49700589-b8262d80-fbf1-11e8-9724-e77e9a0cf685.gif"/>
+<img src="https://user-images.githubusercontent.com/39852038/52539458-5750d800-2d8f-11e9-8f5c-948900b4de29.png"/>
 </p>
 
 <p align="center">
@@ -17,6 +15,10 @@
 <br>
 
 # About vue-cryptobar
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/39852038/49700589-b8262d80-fbf1-11e8-9724-e77e9a0cf685.gif"/>
+</p>
 
 ##### Vue-cryptobar is a cryptocurrency tool for Vue developers which looks really modern and clear also can be re-styled with configurations. It shows current prices with colors depending on the positive-negative values and also shows the market name which did the last transition.
 
