@@ -9,3 +9,4 @@ coverage
 *.png
 *.gif
 yarn*
+_layouts
