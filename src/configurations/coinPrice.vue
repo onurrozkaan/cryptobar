@@ -11,7 +11,7 @@ document.write(
     'ipt type="text/javascript" src="https://onurozkan.work/my/own/cdn/vue-cryptobar/jquery-2.2.4.min.js" ></scr' +
     'ipt>'
 )
-export default {
+export default {   
   name: 'coinPrice',
   data () {
     return {
