@@ -10,3 +10,6 @@ coverage
 *.gif
 yarn*
 _layouts
+.circleci
+.travis.yml
+_config.yml
