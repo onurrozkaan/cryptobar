@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/last-commit/onurrozkaan/vue-cryptobar.svg?label=last%20update&style=flat"/>
   <img src="https://img.shields.io/npm/v/vue-cryptobar.svg?colorB=red&label=build%20version&style=flat"/>
   <img src="https://img.shields.io/github/languages/top/onurrozkaan/vue-cryptobar.svg?colorB=red&label=vue%20ratio&style=flat"/>
-  <img src="https://img.shields.io/npm/dm/vue-cryptobar.svg?colorB=red&style=flat"/>
+  <img src="https://img.shields.io/npm/dt/vue-cryptobar.svg?color=red"/>
   <img src="https://img.shields.io/github/repo-size/onurrozkaan/vue-cryptobar.svg?colorB=black&label=repo%20size&style=flat"/>
   <img src="https://img.shields.io/npm/l/vue-cryptobar.svg?colorB=black&label=LICENSE&style=flat"/>
 </p>
