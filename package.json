@@ -75,6 +75,6 @@
     "vue": "2.x"
   },
   "homepage": "https://onurozkan.work/",
-  "repository": "git://github.com/onurrozkaan/vue-cryptobar.git",
+  "repository": "git://github.com/ozkanonur/vue-cryptobar.git",
   "unpkg": "dist/vue-cryptobar.js"
 }
