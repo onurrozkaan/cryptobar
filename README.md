@@ -6,9 +6,9 @@
   <img src="https://img.shields.io/circleci/project/github/ozkanonur/vue-cryptobar/master.svg?label=.circleci"/>
   <img src="https://img.shields.io/travis/com/ozkanonur/vue-cryptobar/master.svg?label=.travis"/>
   <img src="https://img.shields.io/github/last-commit/ozkanonur/vue-cryptobar.svg?label=last%20update&style=flat"/>
-  <img src="https://img.shields.io/npm/v/vue-cryptobar.svg?colorB=red&label=build%20version&style=flat"/>
-  <img src="https://img.shields.io/github/languages/top/ozkanonur/vue-cryptobar.svg?colorB=red&label=vue%20ratio&style=flat"/>
-  <img src="https://img.shields.io/npm/dt/vue-cryptobar.svg?color=red"/>
+  <img src="https://img.shields.io/npm/v/vue-cryptobar.svg?colorB=b71c1c&label=build%20version&style=flat"/>
+  <img src="https://img.shields.io/github/languages/top/ozkanonur/vue-cryptobar.svg?colorB=b71c1c&label=vue%20ratio&style=flat"/>
+  <img src="https://img.shields.io/npm/dt/vue-cryptobar.svg?color=b71c1c"/>
   <img src="https://img.shields.io/github/repo-size/ozkanonur/vue-cryptobar.svg?colorB=black&label=repo%20size&style=flat"/>
   <img src="https://img.shields.io/npm/l/vue-cryptobar.svg?colorB=black&label=LICENSE&style=flat"/>
 </p>
