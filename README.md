@@ -15,7 +15,7 @@
 
 <br>
 
-# About vue-cryptobar
+# DEPRECATED
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/39852038/49700589-b8262d80-fbf1-11e8-9724-e77e9a0cf685.gif"/>
